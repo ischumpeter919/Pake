@@ -4,6 +4,18 @@ on:
     tags:
       - 'V*'
 
+# ... 其他现有工作流配置 ...
+
+# 添加或替换为以下步骤
+- name: Checkout code
+  uses: actions/checkout@v3
+
+- name: Install dependencies
+  uses: taiki-e/install-action@v1
+
+# ... 其他现有工作流配置 ...
+
+
 jobs:
   read_apps_config:
     name: Read Apps Config
